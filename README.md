@@ -1,4 +1,6 @@
-# inat: a Go (golang) iNaturalist client
+# inat
+
+A Go (golang) iNaturalist client
 
 ## cfg.yaml
 
