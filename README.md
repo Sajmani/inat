@@ -76,3 +76,26 @@ In two places:
                   "type": "object",
                   "x-go-type-name": "ObservationFieldValueAttribute",
 ```
+Fix bug `"#/components/schemas/ObservationPhoto"`
+should be `"#/components/schemas/ObservationSound"`:
+```
+      "ResultsObservationSounds": {
+        "type": "object",
+        "properties": {
+          "total_results": {
+            "type": "integer"
+          },
+          "page": {
+            "type": "integer"
+          },
+          "per_page": {
+            "type": "integer"
+          },
+          "results": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ObservationSound"
+            }
+          }
+        },
+```

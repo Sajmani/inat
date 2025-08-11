@@ -5732,7 +5732,7 @@ type ResultsObservationPhotos struct {
 type ResultsObservationSounds struct {
 	Page         int                `json:"page"`
 	PerPage      int                `json:"per_page"`
-	Results      []ObservationPhoto `json:"results"`
+	Results      []ObservationSound `json:"results"`
 	TotalResults int                `json:"total_results"`
 }
 

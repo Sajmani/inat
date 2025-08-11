@@ -3501,7 +3501,7 @@
           "results": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/ObservationPhoto"
+              "$ref": "#/components/schemas/ObservationSound"
             }
           }
         },
