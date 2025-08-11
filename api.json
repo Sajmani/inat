@@ -16114,7 +16114,7 @@
             "example": "species_guess,observed_on"
           },
           {
-            "in": "path",
+            "in": "query",
             "schema": {
               "enum": [
                 "true",
