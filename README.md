@@ -6,7 +6,8 @@ A Go (golang) iNaturalist client
 
 We generate the Go client using oapi-codegen as documented on https://github.com/oapi-codegen/oapi-codegen?tab=readme-ov-file#generating-api-clients
 
-We configure the output options to use Go-style initialisms.
+We configure the output options to use Go-style initialisms
+and inline struct fields, rather than pointers.
 
 ## api.json
 
