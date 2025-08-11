@@ -6007,6 +6007,7 @@
           },
           "observation": {
             "type": "object",
+            "x-go-type-name": "ObservationCreate",
             "properties": {
               "uuid": {
                 "type": "string",
@@ -6058,6 +6059,7 @@
               "observation_field_values_attributes": {
                 "type": "array",
                 "items": {
+                  "x-go-type-name": "ObservationFieldValueAttribute",
                   "type": "object",
                   "properties": {
                     "observation_field_id": {
@@ -8944,6 +8946,7 @@
           },
           "observation": {
             "type": "object",
+            "x-go-type-name": "ObservationUpdate",
             "properties": {
               "uuid": {
                 "type": "string",
@@ -9001,6 +9004,7 @@
                 "type": "array",
                 "items": {
                   "type": "object",
+                  "x-go-type-name": "ObservationFieldValueAttribute",
                   "properties": {
                     "observation_field_id": {
                       "type": "integer"

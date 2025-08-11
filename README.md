@@ -41,3 +41,38 @@ Manually fix two occurrences of `observation_field_values_attributes` to have an
   }
 },
 ```
+
+Specify Go type names for nested messages:
+```
+      "ObservationsCreate": {
+        "type": "object",
+        "properties": {
+          "fields": {
+
+          },
+          "observation": {
+            "type": "object",
+            "x-go-type-name": "ObservationCreate",
+```
+```
+      "ObservationsUpdate": {
+        "type": "object",
+        "properties": {
+          "fields": {
+
+          },
+          "ignore_photos": {
+            "type": "boolean"
+          },
+          "observation": {
+            "type": "object",
+            "x-go-type-name": "ObservationUpdate",
+```
+In two places:
+```
+              "observation_field_values_attributes": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "x-go-type-name": "ObservationFieldValueAttribute",
+```

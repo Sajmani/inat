@@ -5094,85 +5094,91 @@ type ObservationSoundsUpdate struct {
 
 // ObservationsCreate defines model for ObservationsCreate.
 type ObservationsCreate struct {
-	Fields      interface{} `json:"fields,omitempty"`
-	Observation struct {
-		CaptiveFlag                      bool    `json:"captive_flag,omitempty"`
-		CoordinateSystem                 string  `json:"coordinate_system,omitempty"`
-		Description                      string  `json:"description,omitempty"`
-		GeoX                             float32 `json:"geo_x,omitempty"`
-		GeoY                             float32 `json:"geo_y,omitempty"`
-		Geoprivacy                       string  `json:"geoprivacy,omitempty"`
-		Latitude                         float32 `json:"latitude,omitempty"`
-		License                          string  `json:"license,omitempty"`
-		LocationIsExact                  bool    `json:"location_is_exact,omitempty"`
-		Longitude                        float32 `json:"longitude,omitempty"`
-		MakeLicenseDefault               bool    `json:"make_license_default,omitempty"`
-		MakeLicensesSame                 bool    `json:"make_licenses_same,omitempty"`
-		MapScale                         int     `json:"map_scale,omitempty"`
-		ObservationFieldValuesAttributes []struct {
-			ObservationFieldID int         `json:"observation_field_id"`
-			Value              interface{} `json:"value"`
-		} `json:"observation_field_values_attributes,omitempty"`
-		ObservedOnString               string  `json:"observed_on_string,omitempty"`
-		OwnersIdentificationFromVision bool    `json:"owners_identification_from_vision,omitempty"`
-		PlaceGuess                     string  `json:"place_guess,omitempty"`
-		PositionalAccuracy             float32 `json:"positional_accuracy,omitempty"`
-		PositioningDevice              string  `json:"positioning_device,omitempty"`
-		PositioningMethod              string  `json:"positioning_method,omitempty"`
-		PrefersCommunityTaxon          bool    `json:"prefers_community_taxon,omitempty"`
-		ProjectID                      int     `json:"project_id,omitempty"`
-		SiteID                         int     `json:"site_id,omitempty"`
+	Fields      interface{}        `json:"fields,omitempty"`
+	Observation *ObservationCreate `json:"observation,omitempty"`
+}
 
-		// SpeciesGuess The name of the organism observed. If the taxon ID is absent, iNat will try to choose a single taxon based on this string, but it may fail if there's some taxonomic amgiguity.
-		SpeciesGuess string             `json:"species_guess,omitempty"`
-		TagList      string             `json:"tag_list,omitempty"`
-		TaxonID      float32            `json:"taxon_id,omitempty"`
-		TaxonName    float32            `json:"taxon_name,omitempty"`
-		TimeZone     string             `json:"time_zone,omitempty"`
-		UUID         openapi_types.UUID `json:"uuid,omitempty"`
-	} `json:"observation,omitempty"`
+// ObservationFieldValueAttribute defines model for .
+type ObservationFieldValueAttribute struct {
+	ObservationFieldID int         `json:"observation_field_id"`
+	Value              interface{} `json:"value"`
+}
+
+// ObservationCreate defines model for .
+type ObservationCreate struct {
+	CaptiveFlag                      bool                             `json:"captive_flag,omitempty"`
+	CoordinateSystem                 string                           `json:"coordinate_system,omitempty"`
+	Description                      string                           `json:"description,omitempty"`
+	GeoX                             float32                          `json:"geo_x,omitempty"`
+	GeoY                             float32                          `json:"geo_y,omitempty"`
+	Geoprivacy                       string                           `json:"geoprivacy,omitempty"`
+	Latitude                         float32                          `json:"latitude,omitempty"`
+	License                          string                           `json:"license,omitempty"`
+	LocationIsExact                  bool                             `json:"location_is_exact,omitempty"`
+	Longitude                        float32                          `json:"longitude,omitempty"`
+	MakeLicenseDefault               bool                             `json:"make_license_default,omitempty"`
+	MakeLicensesSame                 bool                             `json:"make_licenses_same,omitempty"`
+	MapScale                         int                              `json:"map_scale,omitempty"`
+	ObservationFieldValuesAttributes []ObservationFieldValueAttribute `json:"observation_field_values_attributes,omitempty"`
+	ObservedOnString                 string                           `json:"observed_on_string,omitempty"`
+	OwnersIdentificationFromVision   bool                             `json:"owners_identification_from_vision,omitempty"`
+	PlaceGuess                       string                           `json:"place_guess,omitempty"`
+	PositionalAccuracy               float32                          `json:"positional_accuracy,omitempty"`
+	PositioningDevice                string                           `json:"positioning_device,omitempty"`
+	PositioningMethod                string                           `json:"positioning_method,omitempty"`
+	PrefersCommunityTaxon            bool                             `json:"prefers_community_taxon,omitempty"`
+	ProjectID                        int                              `json:"project_id,omitempty"`
+	SiteID                           int                              `json:"site_id,omitempty"`
+
+	// SpeciesGuess The name of the organism observed. If the taxon ID is absent, iNat will try to choose a single taxon based on this string, but it may fail if there's some taxonomic amgiguity.
+	SpeciesGuess string             `json:"species_guess,omitempty"`
+	TagList      string             `json:"tag_list,omitempty"`
+	TaxonID      float32            `json:"taxon_id,omitempty"`
+	TaxonName    float32            `json:"taxon_name,omitempty"`
+	TimeZone     string             `json:"time_zone,omitempty"`
+	UUID         openapi_types.UUID `json:"uuid,omitempty"`
 }
 
 // ObservationsUpdate defines model for ObservationsUpdate.
 type ObservationsUpdate struct {
-	Fields       interface{} `json:"fields,omitempty"`
-	IgnorePhotos bool        `json:"ignore_photos,omitempty"`
-	Observation  struct {
-		CaptiveFlag                      bool    `json:"captive_flag,omitempty"`
-		CoordinateSystem                 string  `json:"coordinate_system,omitempty"`
-		Description                      string  `json:"description"`
-		GeoX                             float32 `json:"geo_x"`
-		GeoY                             float32 `json:"geo_y"`
-		Geoprivacy                       string  `json:"geoprivacy,omitempty"`
-		Latitude                         float32 `json:"latitude"`
-		License                          string  `json:"license,omitempty"`
-		LocationIsExact                  bool    `json:"location_is_exact,omitempty"`
-		Longitude                        float32 `json:"longitude"`
-		MakeLicenseDefault               bool    `json:"make_license_default,omitempty"`
-		MakeLicensesSame                 bool    `json:"make_licenses_same,omitempty"`
-		MapScale                         int     `json:"map_scale,omitempty"`
-		ObservationFieldValuesAttributes []struct {
-			ObservationFieldID int         `json:"observation_field_id"`
-			Value              interface{} `json:"value"`
-		} `json:"observation_field_values_attributes,omitempty"`
-		ObservedOnString               string  `json:"observed_on_string"`
-		OwnersIdentificationFromVision bool    `json:"owners_identification_from_vision,omitempty"`
-		PlaceGuess                     string  `json:"place_guess"`
-		PositionalAccuracy             float32 `json:"positional_accuracy"`
-		PositioningDevice              string  `json:"positioning_device"`
-		PositioningMethod              string  `json:"positioning_method"`
-		PrefersCommunityTaxon          bool    `json:"prefers_community_taxon,omitempty"`
-		ProjectID                      int     `json:"project_id,omitempty"`
-		SiteID                         int     `json:"site_id,omitempty"`
+	Fields       interface{}        `json:"fields,omitempty"`
+	IgnorePhotos bool               `json:"ignore_photos,omitempty"`
+	Observation  *ObservationUpdate `json:"observation,omitempty"`
+}
 
-		// SpeciesGuess The name of the organism observed. If the taxon ID is absent, iNat will try to choose a single taxon based on this string, but it may fail if there's some taxonomic amgiguity.
-		SpeciesGuess string             `json:"species_guess"`
-		TagList      string             `json:"tag_list"`
-		TaxonID      float32            `json:"taxon_id,omitempty"`
-		TaxonName    float32            `json:"taxon_name,omitempty"`
-		TimeZone     string             `json:"time_zone,omitempty"`
-		UUID         openapi_types.UUID `json:"uuid,omitempty"`
-	} `json:"observation,omitempty"`
+// ObservationUpdate defines model for .
+type ObservationUpdate struct {
+	CaptiveFlag                      bool                             `json:"captive_flag,omitempty"`
+	CoordinateSystem                 string                           `json:"coordinate_system,omitempty"`
+	Description                      string                           `json:"description"`
+	GeoX                             float32                          `json:"geo_x"`
+	GeoY                             float32                          `json:"geo_y"`
+	Geoprivacy                       string                           `json:"geoprivacy,omitempty"`
+	Latitude                         float32                          `json:"latitude"`
+	License                          string                           `json:"license,omitempty"`
+	LocationIsExact                  bool                             `json:"location_is_exact,omitempty"`
+	Longitude                        float32                          `json:"longitude"`
+	MakeLicenseDefault               bool                             `json:"make_license_default,omitempty"`
+	MakeLicensesSame                 bool                             `json:"make_licenses_same,omitempty"`
+	MapScale                         int                              `json:"map_scale,omitempty"`
+	ObservationFieldValuesAttributes []ObservationFieldValueAttribute `json:"observation_field_values_attributes,omitempty"`
+	ObservedOnString                 string                           `json:"observed_on_string"`
+	OwnersIdentificationFromVision   bool                             `json:"owners_identification_from_vision,omitempty"`
+	PlaceGuess                       string                           `json:"place_guess"`
+	PositionalAccuracy               float32                          `json:"positional_accuracy"`
+	PositioningDevice                string                           `json:"positioning_device"`
+	PositioningMethod                string                           `json:"positioning_method"`
+	PrefersCommunityTaxon            bool                             `json:"prefers_community_taxon,omitempty"`
+	ProjectID                        int                              `json:"project_id,omitempty"`
+	SiteID                           int                              `json:"site_id,omitempty"`
+
+	// SpeciesGuess The name of the organism observed. If the taxon ID is absent, iNat will try to choose a single taxon based on this string, but it may fail if there's some taxonomic amgiguity.
+	SpeciesGuess string             `json:"species_guess"`
+	TagList      string             `json:"tag_list"`
+	TaxonID      float32            `json:"taxon_id,omitempty"`
+	TaxonName    float32            `json:"taxon_name,omitempty"`
+	TimeZone     string             `json:"time_zone,omitempty"`
+	UUID         openapi_types.UUID `json:"uuid,omitempty"`
 }
 
 // Photo defines model for Photo.
