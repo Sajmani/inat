@@ -6056,20 +6056,21 @@
                 "type": "integer"
               },
               "observation_field_values_attributes": {
-                "type": "object",
-                "properties": {
-                  "observation_field_id": {
-                    "type": "integer"
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "observation_field_id": {
+                      "type": "integer"
+                    },
+                    "value": {}
                   },
-                  "value": {
-
-                  }
-                },
-                "required": [
-                  "observation_field_id",
-                  "value"
-                ],
-                "additionalProperties": false
+                  "required": [
+                    "observation_field_id",
+                    "value"
+                  ],
+                  "additionalProperties": false
+                }
               },
               "observed_on_string": {
                 "type": "string"
@@ -8997,20 +8998,21 @@
                 "type": "integer"
               },
               "observation_field_values_attributes": {
-                "type": "object",
-                "properties": {
-                  "observation_field_id": {
-                    "type": "integer"
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "observation_field_id": {
+                      "type": "integer"
+                    },
+                    "value": {}
                   },
-                  "value": {
-
-                  }
-                },
-                "required": [
-                  "observation_field_id",
-                  "value"
-                ],
-                "additionalProperties": false
+                  "required": [
+                    "observation_field_id",
+                    "value"
+                  ],
+                  "additionalProperties": false
+                }
               },
               "observed_on_string": {
                 "type": "string",

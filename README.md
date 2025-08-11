@@ -15,7 +15,29 @@ Update api.json from https://api.inaturalist.org/v2/api-docs
 
 Validate api.json as YAML using https://editor.swagger.io/
 
-Manually fix line 16117 in pretty-printed api.json (as of Aug 11, 2025),
-"in": "path" should be "in": "query" for the "include_ancestors" parameter
-for the "/observations/species_counts" path.
+Manual fixes as of Aug 11, 2025:
 
+Fix line 16117 in pretty-printed api.json:
+`"in": "path"` should be `"in": "query"` for the `"include_ancestors"` parameter
+for the `"/observations/species_counts"` path.
+
+Manually fix two occurrences of `observation_field_values_attributes` to have an array type:
+```
+"observation_field_values_attributes": {
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "observation_field_id": {
+        "type": "integer"
+      },
+      "value": {}
+    },
+    "required": [
+      "observation_field_id",
+      "value"
+    ],
+    "additionalProperties": false
+  }
+},
+```

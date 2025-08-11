@@ -5109,7 +5109,7 @@ type ObservationsCreate struct {
 		MakeLicenseDefault               bool    `json:"make_license_default,omitempty"`
 		MakeLicensesSame                 bool    `json:"make_licenses_same,omitempty"`
 		MapScale                         int     `json:"map_scale,omitempty"`
-		ObservationFieldValuesAttributes struct {
+		ObservationFieldValuesAttributes []struct {
 			ObservationFieldID int         `json:"observation_field_id"`
 			Value              interface{} `json:"value"`
 		} `json:"observation_field_values_attributes,omitempty"`
@@ -5151,7 +5151,7 @@ type ObservationsUpdate struct {
 		MakeLicenseDefault               bool    `json:"make_license_default,omitempty"`
 		MakeLicensesSame                 bool    `json:"make_licenses_same,omitempty"`
 		MapScale                         int     `json:"map_scale,omitempty"`
-		ObservationFieldValuesAttributes struct {
+		ObservationFieldValuesAttributes []struct {
 			ObservationFieldID int         `json:"observation_field_id"`
 			Value              interface{} `json:"value"`
 		} `json:"observation_field_values_attributes,omitempty"`
