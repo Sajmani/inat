@@ -913,9 +913,7 @@
           },
           "preferred_common_names": {
             "type": "array",
-            "items": {
-
-            },
+            "items": {},
             "nullable": true
           },
           "rank": {
@@ -3608,63 +3606,49 @@
                 "properties": {
                   "year": {
                     "type": "object",
-                    "properties": {
-
-                    },
+                    "properties": {},
                     "additionalProperties": {
                       "type": "integer"
                     }
                   },
                   "month": {
                     "type": "object",
-                    "properties": {
-
-                    },
+                    "properties": {},
                     "additionalProperties": {
                       "type": "integer"
                     }
                   },
                   "week": {
                     "type": "object",
-                    "properties": {
-
-                    },
+                    "properties": {},
                     "additionalProperties": {
                       "type": "integer"
                     }
                   },
                   "day": {
                     "type": "object",
-                    "properties": {
-
-                    },
+                    "properties": {},
                     "additionalProperties": {
                       "type": "integer"
                     }
                   },
                   "hour": {
                     "type": "object",
-                    "properties": {
-
-                    },
+                    "properties": {},
                     "additionalProperties": {
                       "type": "integer"
                     }
                   },
                   "month_of_year": {
                     "type": "object",
-                    "properties": {
-
-                    },
+                    "properties": {},
                     "additionalProperties": {
                       "type": "integer"
                     }
                   },
                   "week_of_year": {
                     "type": "object",
-                    "properties": {
-
-                    },
+                    "properties": {},
                     "additionalProperties": {
                       "type": "integer"
                     }
@@ -3827,12 +3811,8 @@
                 "count": {
                   "type": "integer"
                 },
-                "week_of_year": {
-
-                },
-                "month_of_year": {
-
-                },
+                "week_of_year": {},
+                "month_of_year": {},
                 "controlled_attribute": {
                   "type": "object",
                   "properties": {
@@ -3928,9 +3908,7 @@
                     },
                     "values": {
                       "type": "array",
-                      "items": {
-
-                      }
+                      "items": {}
                     }
                   },
                   "additionalProperties": false
@@ -3944,9 +3922,7 @@
           },
           "unannotated": {
             "type": "object",
-            "properties": {
-
-            },
+            "properties": {},
             "additionalProperties": {
               "anyOf": [
                 {
@@ -3957,9 +3933,7 @@
                     },
                     "month_of_year": {
                       "type": "object",
-                      "properties": {
-
-                      },
+                      "properties": {},
                       "additionalProperties": {
                         "type": "integer"
                       }
@@ -3975,9 +3949,7 @@
                     },
                     "week_of_year": {
                       "type": "object",
-                      "properties": {
-
-                      },
+                      "properties": {},
                       "additionalProperties": {
                         "type": "integer"
                       }
@@ -4997,9 +4969,7 @@
                 "format": "uuid",
                 "description": "When `source` is `observations`, ignore this observation"
               },
-              "fields": {
-
-              },
+              "fields": {},
               "image_url": {
                 "type": "string",
                 "description": "URL for image to use when `source` is `visual`",
@@ -5406,9 +5376,7 @@
           },
           "data": {
             "type": "object",
-            "properties": {
-
-            }
+            "properties": {}
           }
         },
         "required": [
@@ -5468,18 +5436,14 @@
           "locale": {
             "type": "string"
           },
-          "fields": {
-
-          }
+          "fields": {}
         },
         "additionalProperties": false
       },
       "CommentsCreate": {
         "type": "object",
         "properties": {
-          "fields": {
-
-          },
+          "fields": {},
           "comment": {
             "type": "object",
             "properties": {
@@ -5516,9 +5480,7 @@
       "CommentsUpdate": {
         "type": "object",
         "properties": {
-          "fields": {
-
-          },
+          "fields": {},
           "comment": {
             "type": "object",
             "properties": {
@@ -5559,9 +5521,7 @@
             "type": "string",
             "nullable": true
           },
-          "fields": {
-
-          }
+          "fields": {}
         },
         "additionalProperties": false
       },
@@ -5577,18 +5537,14 @@
             },
             "additionalProperties": false
           },
-          "fields": {
-
-          }
+          "fields": {}
         },
         "additionalProperties": false
       },
       "IdentificationsCreate": {
         "type": "object",
         "properties": {
-          "fields": {
-
-          },
+          "fields": {},
           "identification": {
             "type": "object",
             "properties": {
@@ -5746,9 +5702,7 @@
       "IdentificationsUpdate": {
         "type": "object",
         "properties": {
-          "fields": {
-
-          },
+          "fields": {},
           "identification": {
             "type": "object",
             "properties": {
@@ -5774,9 +5728,7 @@
           "page": {
             "type": "integer"
           },
-          "fields": {
-
-          }
+          "fields": {}
         },
         "additionalProperties": false
       },
@@ -5804,18 +5756,14 @@
             ],
             "additionalProperties": false
           },
-          "fields": {
-
-          }
+          "fields": {}
         },
         "additionalProperties": false
       },
       "ObservationFieldValuesCreate": {
         "type": "object",
         "properties": {
-          "fields": {
-
-          },
+          "fields": {},
           "observation_field_value": {
             "type": "object",
             "properties": {
@@ -5849,9 +5797,7 @@
       "ObservationPhotosCreate": {
         "type": "object",
         "properties": {
-          "fields": {
-
-          },
+          "fields": {},
           "observation_photo": {
             "type": "object",
             "properties": {
@@ -5884,9 +5830,7 @@
       "ObservationPhotosCreateMultipart": {
         "type": "object",
         "properties": {
-          "fields": {
-
-          },
+          "fields": {},
           "observation_photo[observation_id]": {
             "type": "string",
             "format": "uuid",
@@ -5913,9 +5857,7 @@
       "ObservationPhotosUpdate": {
         "type": "object",
         "properties": {
-          "fields": {
-
-          },
+          "fields": {},
           "observation_photo": {
             "type": "object",
             "properties": {
@@ -5937,9 +5879,7 @@
       "ObservationSoundsCreate": {
         "type": "object",
         "properties": {
-          "fields": {
-
-          },
+          "fields": {},
           "observation_sound": {
             "type": "object",
             "properties": {
@@ -5961,9 +5901,7 @@
       "ObservationSoundsCreateMultipart": {
         "type": "object",
         "properties": {
-          "fields": {
-
-          },
+          "fields": {},
           "observation_sound[observation_id]": {
             "type": "string",
             "format": "uuid"
@@ -5981,9 +5919,7 @@
       "ObservationSoundsUpdate": {
         "type": "object",
         "properties": {
-          "fields": {
-
-          },
+          "fields": {},
           "observation_sound": {
             "type": "object",
             "properties": {
@@ -6002,9 +5938,7 @@
       "ObservationsCreate": {
         "type": "object",
         "properties": {
-          "fields": {
-
-          },
+          "fields": {},
           "observation": {
             "type": "object",
             "x-go-type-name": "ObservationCreate",
@@ -6059,8 +5993,8 @@
               "observation_field_values_attributes": {
                 "type": "array",
                 "items": {
-                  "x-go-type-name": "ObservationFieldValueAttribute",
                   "type": "object",
+                  "x-go-type-name": "ObservationFieldValueAttribute",
                   "properties": {
                     "observation_field_id": {
                       "type": "integer"
@@ -6129,9 +6063,7 @@
       "ObservationsDeleted": {
         "type": "object",
         "properties": {
-          "fields": {
-
-          },
+          "fields": {},
           "since": {
             "type": "string",
             "format": "date"
@@ -8938,9 +8870,7 @@
       "ObservationsUpdate": {
         "type": "object",
         "properties": {
-          "fields": {
-
-          },
+          "fields": {},
           "ignore_photos": {
             "type": "boolean"
           },
@@ -9103,9 +9033,7 @@
           "per_page": {
             "type": "integer"
           },
-          "fields": {
-
-          }
+          "fields": {}
         },
         "additionalProperties": false
       },
@@ -9116,9 +9044,7 @@
             "type": "string",
             "format": "binary"
           },
-          "fields": {
-
-          },
+          "fields": {},
           "uuid": {
             "type": "string",
             "format": "uuid"
@@ -9154,9 +9080,7 @@
             "type": "number",
             "format": "float"
           },
-          "fields": {
-
-          }
+          "fields": {}
         },
         "required": [
           "nelat",
@@ -9184,18 +9108,14 @@
           "per_page": {
             "type": "integer"
           },
-          "fields": {
-
-          }
+          "fields": {}
         },
         "additionalProperties": false
       },
       "ProjectObservationsCreate": {
         "type": "object",
         "properties": {
-          "fields": {
-
-          },
+          "fields": {},
           "project_observation": {
             "type": "object",
             "properties": {
@@ -9220,9 +9140,7 @@
       "ProjectObservationsUpdate": {
         "type": "object",
         "properties": {
-          "fields": {
-
-          },
+          "fields": {},
           "project_observation": {
             "type": "object",
             "properties": {
@@ -9286,9 +9204,7 @@
           "per_page": {
             "type": "integer"
           },
-          "fields": {
-
-          },
+          "fields": {},
           "order_by": {
             "type": "string",
             "enum": [
@@ -9309,9 +9225,7 @@
           "per_page": {
             "type": "integer"
           },
-          "fields": {
-
-          }
+          "fields": {}
         },
         "additionalProperties": false
       },
@@ -9534,9 +9448,7 @@
       "SavedLocationsCreate": {
         "type": "object",
         "properties": {
-          "fields": {
-
-          },
+          "fields": {},
           "saved_location": {
             "type": "object",
             "properties": {
@@ -9580,9 +9492,7 @@
           "page": {
             "type": "integer"
           },
-          "fields": {
-
-          }
+          "fields": {}
         },
         "additionalProperties": false
       },
@@ -9593,9 +9503,7 @@
             "type": "string",
             "format": "binary"
           },
-          "fields": {
-
-          },
+          "fields": {},
           "uuid": {
             "type": "string",
             "format": "uuid"
@@ -9626,9 +9534,7 @@
           "preferred_place_id": {
             "type": "integer"
           },
-          "fields": {
-
-          }
+          "fields": {}
         },
         "additionalProperties": false
       },
@@ -9705,9 +9611,7 @@
           "preferred_place_id": {
             "type": "integer"
           },
-          "fields": {
-
-          }
+          "fields": {}
         },
         "additionalProperties": false
       },
@@ -9719,9 +9623,7 @@
             "format": "uuid",
             "description": "When `source` is `observations`, ignore this observation"
           },
-          "fields": {
-
-          },
+          "fields": {},
           "image_url": {
             "type": "string",
             "description": "URL for image to use when `source` is `visual`",
@@ -9834,9 +9736,7 @@
       "TaxonNamePrioritiesCreate": {
         "type": "object",
         "properties": {
-          "fields": {
-
-          },
+          "fields": {},
           "taxon_name_priority": {
             "type": "object",
             "properties": {
@@ -9863,9 +9763,7 @@
       "TaxonNamePrioritiesUpdate": {
         "type": "object",
         "properties": {
-          "fields": {
-
-          },
+          "fields": {},
           "taxon_name_priority": {
             "type": "object",
             "properties": {
@@ -9897,9 +9795,7 @@
           "per_page": {
             "type": "integer"
           },
-          "fields": {
-
-          }
+          "fields": {}
         },
         "additionalProperties": false
       },
@@ -9918,9 +9814,7 @@
       "UsersIndex": {
         "type": "object",
         "properties": {
-          "fields": {
-
-          },
+          "fields": {},
           "page": {
             "type": "integer",
             "minimum": 1
@@ -10020,9 +9914,7 @@
               },
               "icon": {
                 "type": "object",
-                "properties": {
-
-                },
+                "properties": {},
                 "additionalProperties": false,
                 "nullable": true
               },
@@ -10677,9 +10569,7 @@
           },
           {
             "in": "query",
-            "schema": {
-
-            },
+            "schema": {},
             "name": "fields"
           }
         ],
@@ -10715,9 +10605,7 @@
           },
           {
             "in": "query",
-            "schema": {
-
-            },
+            "schema": {},
             "name": "fields"
           },
           {
@@ -10921,9 +10809,7 @@
           },
           {
             "in": "query",
-            "schema": {
-
-            },
+            "schema": {},
             "name": "fields"
           },
           {
@@ -11131,9 +11017,7 @@
                     "format": "uuid",
                     "description": "When `source` is `observations`, ignore this observation"
                   },
-                  "fields": {
-
-                  },
+                  "fields": {},
                   "image_url": {
                     "type": "string",
                     "description": "URL for image to use when `source` is `visual`",
@@ -11357,9 +11241,7 @@
           },
           {
             "in": "query",
-            "schema": {
-
-            },
+            "schema": {},
             "name": "fields"
           }
         ],
@@ -11512,9 +11394,7 @@
           },
           {
             "in": "query",
-            "schema": {
-
-            },
+            "schema": {},
             "name": "fields"
           },
           {
@@ -11562,9 +11442,7 @@
                     "type": "string",
                     "format": "binary"
                   },
-                  "fields": {
-
-                  },
+                  "fields": {},
                   "uuid": {
                     "type": "string",
                     "format": "uuid"
@@ -11781,9 +11659,7 @@
           },
           {
             "in": "query",
-            "schema": {
-
-            },
+            "schema": {},
             "name": "fields"
           }
         ],
@@ -11917,9 +11793,7 @@
           },
           {
             "in": "query",
-            "schema": {
-
-            },
+            "schema": {},
             "name": "fields",
             "description": "Attribute fields to return in the response",
             "example": "all"
@@ -12215,9 +12089,7 @@
           },
           {
             "in": "query",
-            "schema": {
-
-            },
+            "schema": {},
             "name": "fields",
             "description": "Attribute fields to return in the response",
             "example": "title,description"
@@ -13467,9 +13339,7 @@
           },
           {
             "in": "query",
-            "schema": {
-
-            },
+            "schema": {},
             "name": "fields",
             "description": "Attribute fields to return in the response",
             "example": "species_guess,observed_on"
@@ -13576,9 +13446,7 @@
           },
           {
             "in": "query",
-            "schema": {
-
-            },
+            "schema": {},
             "name": "fields"
           }
         ],
@@ -13695,9 +13563,7 @@
           },
           {
             "in": "query",
-            "schema": {
-
-            },
+            "schema": {},
             "name": "fields"
           },
           {
@@ -14916,9 +14782,7 @@
           },
           {
             "in": "query",
-            "schema": {
-
-            },
+            "schema": {},
             "name": "fields",
             "description": "Attribute fields to return in the response",
             "example": "species_guess,observed_on"
@@ -16112,9 +15976,7 @@
           },
           {
             "in": "query",
-            "schema": {
-
-            },
+            "schema": {},
             "name": "fields",
             "description": "Attribute fields to return in the response",
             "example": "species_guess,observed_on"
@@ -17390,9 +17252,7 @@
           },
           {
             "in": "query",
-            "schema": {
-
-            },
+            "schema": {},
             "name": "fields",
             "description": "Attribute fields to return in the response",
             "example": "species_guess,observed_on"
@@ -18640,9 +18500,7 @@
           },
           {
             "in": "query",
-            "schema": {
-
-            },
+            "schema": {},
             "name": "fields",
             "description": "Attribute fields to return in the response",
             "example": "species_guess,observed_on"
@@ -19876,9 +19734,7 @@
           },
           {
             "in": "query",
-            "schema": {
-
-            },
+            "schema": {},
             "name": "fields",
             "description": "Attribute fields to return in the response",
             "example": "species_guess,observed_on"
@@ -21144,9 +21000,7 @@
           },
           {
             "in": "query",
-            "schema": {
-
-            },
+            "schema": {},
             "name": "fields",
             "description": "Attribute fields to return in the response",
             "example": "species_guess,observed_on"
@@ -22367,9 +22221,7 @@
           },
           {
             "in": "query",
-            "schema": {
-
-            },
+            "schema": {},
             "name": "fields",
             "description": "Attribute fields to return in the response",
             "example": "species_guess,observed_on"
@@ -22440,9 +22292,7 @@
         "parameters": [
           {
             "in": "query",
-            "schema": {
-
-            },
+            "schema": {},
             "name": "fields"
           },
           {
@@ -23671,9 +23521,7 @@
           },
           {
             "in": "query",
-            "schema": {
-
-            },
+            "schema": {},
             "name": "fields",
             "description": "Attribute fields to return in the response",
             "example": "species_guess,observed_on"
@@ -23883,9 +23731,7 @@
           },
           {
             "in": "query",
-            "schema": {
-
-            },
+            "schema": {},
             "name": "fields"
           }
         ],
@@ -24460,9 +24306,7 @@
           },
           {
             "in": "query",
-            "schema": {
-
-            },
+            "schema": {},
             "name": "fields"
           },
           {
@@ -24843,7 +24687,10 @@
             "in": "query",
             "schema": {
               "type": "integer",
-              "enum": [256, 512]
+              "enum": [
+                256,
+                512
+              ]
             },
             "name": "tile_size"
           },
@@ -26073,7 +25920,10 @@
             "in": "query",
             "schema": {
               "type": "integer",
-              "enum": [256, 512]
+              "enum": [
+                256,
+                512
+              ]
             },
             "name": "tile_size"
           },
@@ -27625,9 +27475,7 @@
           },
           {
             "in": "query",
-            "schema": {
-
-            },
+            "schema": {},
             "name": "fields"
           },
           {
@@ -27810,9 +27658,7 @@
           },
           {
             "in": "query",
-            "schema": {
-
-            },
+            "schema": {},
             "name": "fields"
           },
           {
@@ -28080,7 +27926,10 @@
             "in": "query",
             "schema": {
               "type": "integer",
-              "enum": [256, 512]
+              "enum": [
+                256,
+                512
+              ]
             },
             "name": "tile_size"
           },
@@ -29324,7 +29173,10 @@
             "in": "query",
             "schema": {
               "type": "integer",
-              "enum": [256, 512]
+              "enum": [
+                256,
+                512
+              ]
             },
             "name": "tile_size"
           },
@@ -30652,7 +30504,10 @@
             "in": "query",
             "schema": {
               "type": "integer",
-              "enum": [256, 512]
+              "enum": [
+                256,
+                512
+              ]
             },
             "name": "tile_size"
           },
@@ -32878,7 +32733,10 @@
             "in": "query",
             "schema": {
               "type": "integer",
-              "enum": [256, 512]
+              "enum": [
+                256,
+                512
+              ]
             },
             "name": "tile_size"
           },
@@ -34122,7 +33980,10 @@
             "in": "query",
             "schema": {
               "type": "integer",
-              "enum": [256, 512]
+              "enum": [
+                256,
+                512
+              ]
             },
             "name": "tile_size"
           },
@@ -35366,7 +35227,10 @@
             "in": "query",
             "schema": {
               "type": "integer",
-              "enum": [256, 512]
+              "enum": [
+                256,
+                512
+              ]
             },
             "name": "tile_size"
           },
@@ -36617,7 +36481,10 @@
             "in": "query",
             "schema": {
               "type": "integer",
-              "enum": [256, 512]
+              "enum": [
+                256,
+                512
+              ]
             },
             "name": "tile_size"
           },
@@ -36701,7 +36568,10 @@
             "in": "query",
             "schema": {
               "type": "integer",
-              "enum": [256, 512]
+              "enum": [
+                256,
+                512
+              ]
             },
             "name": "tile_size"
           }
@@ -36774,7 +36644,10 @@
             "in": "query",
             "schema": {
               "type": "integer",
-              "enum": [256, 512]
+              "enum": [
+                256,
+                512
+              ]
             },
             "name": "tile_size"
           }
