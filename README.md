@@ -15,11 +15,7 @@ Update api.json from https://api.inaturalist.org/v2/api-docs
 
 Validate api.json as YAML using https://editor.swagger.io/
 
-Manual fixes as of Aug 11, 2025:
-
-Fix line 16117 in pretty-printed api.json:
-`"in": "path"` should be `"in": "query"` for the `"include_ancestors"` parameter
-for the `"/observations/species_counts"` path.
+Manual fixes as of Aug 20, 2025:
 
 Manually fix two occurrences of `observation_field_values_attributes` to have an array type:
 ```
@@ -75,27 +71,4 @@ In two places:
                 "items": {
                   "type": "object",
                   "x-go-type-name": "ObservationFieldValueAttribute",
-```
-Fix bug `"#/components/schemas/ObservationPhoto"`
-should be `"#/components/schemas/ObservationSound"`:
-```
-      "ResultsObservationSounds": {
-        "type": "object",
-        "properties": {
-          "total_results": {
-            "type": "integer"
-          },
-          "page": {
-            "type": "integer"
-          },
-          "per_page": {
-            "type": "integer"
-          },
-          "results": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ObservationSound"
-            }
-          }
-        },
 ```
